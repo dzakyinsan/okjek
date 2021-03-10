@@ -25,6 +25,7 @@ export default WelcomePage = ({navigation}) => {
             }}
             style={{height: 50, width: 150}}
           />
+          
         </View>
 
         <View style={styles.loginImage}>
@@ -75,20 +76,13 @@ export default WelcomePage = ({navigation}) => {
   } else {
     return (
       <>
-        <StatusBar barStyle="dark-content" backgroundColor="#ee4d2d" />
+        <StatusBar barStyle="dark-content" backgroundColor="white" />
         <View style={styles.beforeLogin}>
-          {/* <Image
+          <Image
             source={require('./../../assets/okjekLogo.png')}
             style={{width: 300, height: 200}}
-          /> */}
-          <Icon2
-            name="motorcycle"
-            size={100}
-            color="white"
-            style={{marginHorizontal: 10}}
-            // style={styles.IconFB}
           />
-          <Text style={{fontSize: 50, fontWeight: 'bold'}}>OK JEK</Text>
+         
         </View>
       </>
     );
@@ -113,7 +107,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     height: 300,
-    marginTop: 130,
+    marginTop: 110,
   },
   containerLayer2: {
     marginLeft: 20,
@@ -123,14 +117,20 @@ const styles = StyleSheet.create({
     marginRight: 30,
     marginTop: 20,
     justifyContent: 'space-between',
+    // borderWidth:2,
+    // borderColor:'black'
   },
   button: {
+    // borderWidth:2,
+    // borderColor:'black',
     backgroundColor: '#fd5f32',
-    paddingTop: 14,
-    paddingBottom: 14,
-    paddingHorizontal: 55,
+    marginRight:5,
+    paddingVertical:10,
+    alignItems:"center",
+    // paddingHorizontal: 50,
     borderRadius: 7,
     elevation: 2,
+    width:'50%'
   },
   button2: {
     backgroundColor: '#4e6daf',
@@ -168,6 +168,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#ee4d2d',
+    // backgroundColor: '#ee4d2d',
+    backgroundColor: 'white',
   },
 });

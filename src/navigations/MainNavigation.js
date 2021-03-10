@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {StatusBar} from 'react-native';
-// import {useDispatch} from 'react-redux';
 import WelcomeForm from './../components/welocmeForm';
 import RegisterForm from './../components/registerForm';
 import LoginForm from './../components/loginForm';

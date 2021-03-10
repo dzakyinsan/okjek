@@ -7,7 +7,6 @@ import {
 const INITIAL_STATE = {
   username: '',
   loading: false,
-  authChecked: false,
 };
 
 export default (state = INITIAL_STATE, {type, payload}) => {
@@ -15,9 +14,9 @@ export default (state = INITIAL_STATE, {type, payload}) => {
     case LOGIN_LOADING:
       return {...state, loading: true};
     case LOGIN_SUCCESS:
-      return {...state, username: payload, authChecked: true};
+      return {...state, username: payload};
     case LOGIN_FAILED:
-      return {...state, username: payload, authChecked: true};
+      return {...state, username: payload, loading: false};
     default:
       return state;
   }

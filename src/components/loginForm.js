@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   Text,
   ActivityIndicator,
-  TextInput,
+  // TextInput,
   ScrollView,
 } from 'react-native';
 import {Input} from 'react-native-elements';
@@ -36,9 +36,6 @@ export default Login = ({navigation}) => {
     dispatch(onUserLogin(username));
   };
 
-  // console.log('loading', loading);
-  // console.log('!username', username);
-  console.log('userRedux', userRedux !== '');
   return (
     <View style={styles.containerSplashStyle}>
       <ScrollView style={styles.containerLayer1}>

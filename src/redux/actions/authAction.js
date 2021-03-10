@@ -21,3 +21,10 @@ export const onUserLogin = (username) => {
     }
   };
 };
+
+export const onUserLogout = () => {
+  return async (dispatch) => {
+    await AsyncStorage.removeItem('username');
+    dispatch({type: LOGIN_FAILED, payload: ''});
+  };
+};
